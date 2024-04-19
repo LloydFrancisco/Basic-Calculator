@@ -2,75 +2,74 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Adjust the layout to column direction */
-    height: 100vh; /* Make the body fill the entire viewport height */
+    flex-direction: column;
+    height: 100vh;
     margin: 0;
-    background-color: #333333; /* Light black background color */
-    font-family: Arial, sans-serif; /* Specify custom font */
+    background-color: #333333;
+    font-family: Arial, sans-serif;
 }
 
 .header {
-    text-align: center; /* Center-align text */
-    margin-bottom: 20px; /* Add some space below the header */
-    font-family: Arial, sans-serif; /* Apply custom font */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .header h1 {
-    font-size: 35px; /* Font size */
-    font-weight: bold; /* Bold font weight */
-    color: #ffffff; /* Dark blue text color */
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .calculator-container {
     width: 300px;
     height: 450px;
-    margin-bottom: 5px; /* Add some space below the input */
-    padding-left: 5px; /* Add left padding to the input */
-    padding-right: 5px; /* Add right padding to the input */
-    padding-bottom: 5px; /* Add bottom padding to the input */
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
     padding-top: 25px;
-    border: none; /* Remove the border */
-    border-radius: 10px; /* Rounded corners for the calculator container */
+    border: none;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #F5F5F5; /* Dirty white background color */
+    background-color: #F5F5F5;
 }
 
 #display.cal-dark-input {
-    width: calc(100% - 10px); /* Adjust width for the input */
-    height: 10px; /* Adjust height of the input */
-    margin-bottom: 30px; /* Add some space below the input */
-    padding: 5px; /* Add padding to the input */
-    border: none; /* Remove the border */
-    border-radius: 5px; /* Rounded corners for the input */
-    text-align: right; /* Align text to the right */
-    font-size: 20px; /* Adjust text size */
-    pointer-events: none; /* Disable pointer events */
-    background-color: #F5F5F5; /* Dirty white background color */
+    width: calc(100% - 10px);
+    height: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 20px;
+    pointer-events: none;
+    background-color: #F5F5F5;
     color: #000000;
-    font-weight: bold; /* Make text bold */
+    font-weight: bold;
 }
 
 #history {
-    width: calc(100% - 10px); /* Adjust width for the input */
-    height: 50px; /* Adjust height of the input */
-    margin-bottom: 10px; /* Add some space below the input */
-    padding: 5px; /* Add padding to the input */
-    border: none; /* Remove the border */
-    border-radius: 5px; /* Rounded corners for the input */
-    text-align: right; /* Align text to the right */
-    font-size: 12px; /* Adjust text size */
-    background-color: #F5F5F5; /* Dirty white background color */
+    width: calc(100% - 10px);
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 12px;
+    background-color: #F5F5F5;
     color: #808080;
     font-weight: bold;
-    overflow-y: scroll; /* Enable vertical scroll */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 #history::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    display: none;
 }
-
 
 .calculator-container .buttons {
     display: flex;
@@ -83,29 +82,27 @@ body {
     height: 50px;
     margin: 5px;
     border: none;
-    border-radius: 10px; /* Make buttons slightly rounded */
-    background-color: #DDDDDD; /* Light gray background color */
-    color: #333333; /* Dark gray text color */
+    border-radius: 10px;
+    background-color: #DDDDDD;
+    color: #333333;
     font-size: 18px;
-    font-weight: bold; /* Make text bold */
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to all buttons */
-    transition: background-color 0.5s ease, color 0.5s ease; /* Add transition effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .calculator-container .buttons button:hover {
-    background-color: #666666; /* Dark gray background color on hover */
-    color: #FFFFFF; /* White text color on hover */
+    background-color: #666666;
+    color: #FFFFFF;
 }
-
 
 .calculator-container .buttons button.operator {
-    color: #FF0000; /* Dark red text color for operator buttons */
+    color: #FF0000;
 }
 
-/* Adjust width and height for specific buttons */
 .calculator-container .buttons button[data-value="="] {
-    width: 115px; /* Adjust width for = button */
+    width: 115px;
 }
 
 .footer {
@@ -117,6 +114,7 @@ body {
     bottom: 0;
     width: 100%;
 }
+
 #history {
     resize: none;
-  }
+}
