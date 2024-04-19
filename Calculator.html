@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>BASIC CALCULATOR</h1>
+  </div>
+  <div class="calculator-container">
+    <section class="container cal-dark">
+      <div>
+        <!-- Text box where number shows -->
+        <textarea id="history" class="display cal-dark-input history" readonly></textarea>
+        <input type="text" id="display" class="display cal-dark-input" readonly> 
+        <div class="buttons">
+          <div>
+            <button id="ac" onclick="clearDisplay()" class="operator" data-value="AC">AC</button>
+            <button onclick="clearDisplay('delete')" class="operator" data-value="DEL">DEL</button>
+            <button onclick="addToDisplay('.')" class="operator" data-value=".">.</button>
+            <button onclick="addToDisplay('/')" class="operator" data-value="/">/</button> 
+          </div>
+          <div>
+            <button onclick="addToDisplay('7')" data-value="7">7</button>
+            <button onclick="addToDisplay('8')" data-value="8">8</button>
+            <button onclick="addToDisplay('9')" data-value="9">9</button> 
+            <button onclick="addToDisplay('*')" class="operator" data-value="*">*</button>
+          </div>
+          <div>
+            <button onclick="addToDisplay('4')" data-value="4">4</button>
+            <button onclick="addToDisplay('5')" data-value="5">5</button>
+            <button onclick="addToDisplay('6')" data-value="6">6</button>
+            <button onclick="addToDisplay('-')" class="operator" data-value="-">-</button>
+          </div>
+          <div>
+            <button onclick="addToDisplay('1')" data-value="1">1</button>
+            <button onclick="addToDisplay('2')" data-value="2">2</button>
+            <button onclick="addToDisplay('3')" data-value="3">3</button>
+            <button onclick="addToDisplay('+')" class="operator" data-value="+">+</button>
+          </div>
+          <div>
+            <button onclick="addToDisplay('00')" data-value="00">00</button>
+            <button onclick="addToDisplay('0')" data-value="0">0</button>
+            <button onclick="calculate()" class="operator" data-value="=">=</button>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="footer">
+    <p>Programmed by Daniel Awil, Lloyd Francisco, & Oniel Angulo</p>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
